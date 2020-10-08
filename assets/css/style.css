@@ -1,6 +1,11 @@
-nav{
-    font-family: 'Sansita Swashed', cursive;
+nav a{
+    font-family: 'Varela', sans-serif;
+    color: #ff9933 !important;
 }
 body{
-    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ff9933;
+}
+html{
+    scroll-behavior: smooth;
 }
