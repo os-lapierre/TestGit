@@ -10,7 +10,7 @@
     <title>Prueba</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
         <a class="navbar-brand ml-2 nav_titulo" href="#">OS</a>
         <button class="navbar-toggler boton" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
             </div>
         </div>
     </nav>
-    <main class="container">
+    <main class="container mt-3">
         <header class="pt-5">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -95,7 +95,10 @@
                       <div class="card-body">
                         <p class="card-title text-uppercase">Meet & Coffee</p>
                         <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
-                        <button id="btn_coff" type="button" class="btn btn-outline-secondary">Mas Info</button>
+                        <!--<button id="btn_coff" type="button" class="btn btn-outline-secondary">Mas Info</button>-->
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+                          Mas Info
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -155,6 +158,26 @@
         <section id="contacto" class="container">
             <h1 class="text-center pt-5 border-bottom">CONTACTO</h1>
             <div class="typeform-widget" data-url="https://form.typeform.com/to/S8SgGs38" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=S8SgGs38&utm_source=typeform.com-01EM03H7S54918PNBPQMJ66DYX-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+        </section>
+        <section id="modales">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Meet & Coffee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lo sentimos, el sitio aun esta en construccion.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </section>
     </main>
     <footer class="icons-section bg-dark text-white py-5">
